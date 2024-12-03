@@ -1,0 +1,85 @@
+<%layout('/layouts/boilerplate')%>
+<body>
+  
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h3 class="my-2">Create new Listings</h3>
+ 
+  <form action="/listings" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        name="title"
+        placeholder="enter your title"
+        class="form-control"
+        required
+      />
+      <div class="valid-feedback">Title looks good</div>
+      <div class="invalid-feedback">title is required!</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label">description</label>
+      <textarea
+      type="text"
+      name="description"
+      placeholder="enter your description"
+      class="form-control"
+      required
+    ></textarea
+    >
+    <div class="invalid-feedback">description is required!</div>
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">upload-image</label>
+      <input
+      type="file"
+      name="image"
+     required
+      class="form-control"
+    />
+    </div>
+    <div class="row">
+      <div class="mb-3 col-md-4">
+        <label for="price" class="form-label">price</label>
+        <input
+        type="number"
+        name="price"
+        placeholder="enter your price"
+        class="form-control"
+        required
+      />
+      <div class="invalid-feedback">price is required!</div>
+      </div>
+  
+      <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">country</label>
+        <input
+        type="text"
+        name="country"
+        placeholder="enter your country"
+        class="form-control"
+        required
+      />
+      <div class="invalid-feedback">country is required!</div>
+      </div>
+    </div>
+
+   
+    <div class="mb-3">
+      <label for="location" class="form-label">location</label>
+      <input
+      type="text"
+      name="location"
+      placeholder="enter your location"
+      class="form-control"
+      required
+    />
+    <div class="invalid-feedback">locatin is required!</div>
+    <button class="btn btn-dark add-btn my-4">Add_Listing</button>
+  </form>
+</div>
+</div>
+
+</body>

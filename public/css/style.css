@@ -1,0 +1,80 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* navbar */
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white !important;
+}
+.fa-compass{
+    font-size: 2rem;
+    color: rgb(226, 83, 83);
+}
+.nav-link{
+    color: #222222 !important;
+}
+.fa-instagram{
+    height: 24px !important;
+    width: 24px !important;
+}
+
+footer{
+    background-color: rgba(222, 226, 230, 0.904);
+}
+.fa-brands{
+font-weight: bold;
+font-size: 1.5rem;
+
+}
+
+/* card */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card:hover{
+    opacity: 0.8;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    object-fit: cover !important;
+    width: 100%;
+
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text{
+    font-weight: 400 !important;
+}
+.card-link{
+    text-decoration: none;
+}
+
+/* add-btn */
+.add-btn{
+    background-color: rgb(226, 83, 83) !important ;
+    border: none !important;
+}
+/* edit-btn */
+.edit-btn{
+    background-color: rgb(226, 83, 83) !important ;
+    border: none !important;
+}
+
+
+/* show page */
+.show-img{
+    height: 50vh;
+}
