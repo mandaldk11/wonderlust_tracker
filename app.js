@@ -87,15 +87,8 @@ app.use('/', userRouter)
 
 
 
-app.get('/demo', async (req, res) => {
-    const fakeuser = new User({
-        email: "pk@test",
-        username: "Dharmendra mandal"
-
-    })
-
-    let newuser = await User.register(fakeuser, "helloWorld")
-    res.send(newuser)
+app.get('/', (req, res) => {
+    res.render('home.ejs')
 })
 
 
